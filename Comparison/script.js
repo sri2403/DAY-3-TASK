@@ -8,7 +8,7 @@ if(keys1.length!=keys2.length){
 }
 else {
   for (let key in obj1) {
-    if (!(key in obj2)){
+    if (!(key in obj2) || obj1[key]!=obj2[key]){
       areEqual = false;
       break;
     }
